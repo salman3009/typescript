@@ -1,0 +1,22 @@
+<script>
+  class EmployeeForm{
+
+      constructor(fullName,age,address){
+          this.fullName = fullName;
+          this.age = age;
+          this.address = address;
+     }
+
+     setAge(input){
+         this.age = input;
+     }
+
+  }
+
+  let salmanObj = new EmployeeForm("salman",77,"chennai");
+  console.log(salmanObj);
+  salmanObj.setAge(56);
+  let akashObj = new EmployeeForm("akash",44,"chennai");
+  console.log(akashObj);
+
+</script>

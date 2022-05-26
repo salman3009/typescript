@@ -1,0 +1,31 @@
+<script>
+    class EmployeeForm{
+  
+        constructor(fullName,age,address){
+            this.fullName = fullName;
+            this.age = age;
+            this.address = address;
+       }
+  
+       setAge(input){
+           this.age = input;
+           return this.age;
+       }
+  
+    }
+  
+ class Coupon extends EmployeeForm{
+
+    constructor(fullName,age,address,code){
+        super(fullName,age,address);
+        this.code = code;
+    }
+ }
+
+let salmanCoupon = new Coupon("salman",555,"chennai",443);
+console.log(salmanCoupon);
+console.log(salmanCoupon.setAge(33));
+
+
+  
+  </script>

@@ -1,0 +1,17 @@
+<script>
+    function googlePay(amount){
+        return new Promise((success,error)=>{
+         if(amount<0){
+             error("amount is not available");
+         }
+         setTimeout(()=>{
+                success("amount paid successfully");
+         },3000)
+        })
+    }
+    googlePay(2000).then((success)=>{
+            console.log(success);
+    },(error)=>{
+            console.log(error);
+    })
+</script>
